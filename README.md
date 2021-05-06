@@ -39,7 +39,7 @@ The results of the four one-sample, two-tailed t-tests can be viewed below:
 
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+- Testing cost, city fuel efficiency, highway fuel efficiency, horse power and safety ratings across vehicle class for MechaCar and four other leading car manufacturers. 
+- The null hypothesis is that the means of all groups are equal, and the alternative hypothesis is that at least one of the means is different from all other groups. 
+- Multiple One-Way ANOVA tests
+- Sufficiently large dataset (at least 50 datapoints for each vehicle class) containing 
