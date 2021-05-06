@@ -23,7 +23,9 @@ The summary data for the three combined lots as well as for each individual lot 
 ![Total Summary](Deliverable_Two/total_summary.png) | ![Lot Summary](Deliverable_Two/lot_summary.png)
 
 ## T-Tests on Suspension Coils
-- There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
+Having performed four one-sample, two-tailed t-tests on the "Suspsension_Coil.csv" dataset for the data across all manufacturing lots as well as the data for each specific lot, given a significance cutoff of 0.05, we are unable to reject the null hypthoses that there is no signicant difference between the sample mean and given population mean of 1500 PSI for the Lot Summary sample, Lot 1 sample and Lot 2 sample (based on their p-values). For the Lot 3 sample, we are able to reject the null hypothesis, and accept the alternative hypothesis that there *is* a significant difference between the sample mean and given population mean of 1500 PSI. 
+
+The results of the four one-sample, two-tailed t-tests can be viewed below: 
 
 | Lot Summary vs. Population | 
 :-------------------------:
