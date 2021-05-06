@@ -2,9 +2,12 @@
 Using R, RStudio and MechaCar's datasets to perform a retrospective analysis of historical MechaCar data, analytical verification and validation of current automotive specifications and study design of future product testing. 
 
 ## Linear Regression to Predict MPG
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-- Is the slope of the linear model considered to be zero? Why or why not?
-- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+- Given a significance cutoff of 0.05, "vehicle length", "ground clearance" and the intercept were the only variables or coefficients to provide a non-random amount of variance to the mpg values in the dataset as indicated by their p-values. 
+- Given the intercept and two signifcant independent variables in the model, the slope-intercept equation for this dataset can be written as:
+`mpg = 6.27 * vehicle length + 3.55 * ground clearance + -0.01` , where 'mpg' is the y-value, 'vehicle length' and 'ground clearance' are the two x-values, '6.27' and '3.55' are the two slope values and '-.01' is the y-intercept value. 
+- Given the r-squared value of 0.7149, we can say that there is approximately a 70% chance that any extra given data points not already included in the dataset can be accurately predicted by this model. However, it should be noted that the significance of the p-value of the intercept indicates that there are other independent variables significantly contributing to variance to the mpg values which have not been accounted for in this dataset. Further, the number of variables with insignifcant p-values is evidence of overfitting, meaning that while the model performs fairly well with the current dataset, it may fail to generalize and predict future data correctly.
+
+The results of the multiple linear regression test performed on the "MechaCar_mpg.csv" dataset can be viewed below:  
 
 | Multiple Linear Regression Results |
 :-------------------------------------:
