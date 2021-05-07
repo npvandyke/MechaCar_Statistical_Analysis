@@ -37,9 +37,18 @@ The results of the four one-sample, two-tailed t-tests can be viewed below:
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In order to quantify how MechaCar performs against the competition, I've designed a statistical study to compare multiple metrics that may be of interest to a consumer: including cost, city fuel efficiency, highway fuel efficiency, horse power and safety ratings. These metrics will be compared across vehicle class for MechaCar and four other leading car manufacturers. 
 
-- Testing cost, city fuel efficiency, highway fuel efficiency, horse power and safety ratings across vehicle class for MechaCar and four other leading car manufacturers. 
-- The null hypothesis is that the means of all groups are equal, and the alternative hypothesis is that at least one of the means is different from all other groups. 
-- Multiple One-Way ANOVA tests
-- Sufficiently large dataset (at least 50 datapoints for each vehicle class) containing 
+For the study, I will be conducting multiple two-way ANOVA tests, one for each of the dependent metrics listed above (cost, city fuel efficiency, highway fuel efficiency, horse power and safety ratings). Considering that each test will involve two categorical independent variables (vehicle class and car manufacturer) with a dependent variable that is continuous and numeric (whose means will be compared across five sample groups), a two-way ANOVA test will be a perfect fit for this study design. 
+
+In the hypothesis testing for this study, a null hypothesis will indicate that there is no significant variation in the means of the dependent variable being tested. Acceptance of the alternative hypothesis will indicate that at least one of the means is different from all other groups. 
+
+In order to conduct this study, I will need a sufficiently large data set, since I expect the variability among groups of different car manufacturers may not be drastic, given that comparisons will be across the same vehicle class. At least 50 data points for each dependent variable in each vehicle class for all five groups (MechaCar and the four other leading car manufactureres) in the data set should be sufficient. Given said data set, the R script for the four one-way ANOVA tests to run using the dplyr library in R would like something like this: 
+
+`read.csv("five_car_manufacturers.csv")`
+
+`summary(aov(city_mpg ~ vehicle_class + car_manufacturer, data = five_car_manufacturers))` <br>
+`summary(aov(hwy_mpg ~ vehicle_class + car_manufacturer, data = five_car_manufacturers))` <br>
+`summary(aov(horsepower ~ vehicle_class + car_manufacturer, data = five_car_manufacturers))` <br>
+`summary(aov(cost ~ vehicle_class + car_manufacturer, data = five_car_manufacturers))` <br>
+`summary(aov(saftey_rtg ~ vehicle_class + car_manufacturer, data = five_car_manufacturers))` 
