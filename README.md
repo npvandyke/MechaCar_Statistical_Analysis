@@ -1,8 +1,10 @@
-# MechaCar Statistical Analysis
+# Overview: MechaCar Statistical Analysis
 
 In this analysis I've reviewed production data for the hypothetical car manufacturing company AutosRUs, whose manufacturing team progress is currently being blocked by production troubles with a new car prototype, the MechaCar. 
 
-I used R, RStudio and AutosRUs' [suspension coil manufacturing dataset](https://github.com/npvandyke/MechaCar_Statistical_Analysis/blob/main/Deliverable_Three/Suspension_Coil.csv) and [MechaCar MPG dataset](https://github.com/npvandyke/MechaCar_Statistical_Analysis/blob/main/Deliverable_One/MechaCar_mpg.csv) to perform a retrospective analysis of historical data, analytical verification and validation of current automotive specifications and study design of future product testing. 
+I used R, RStudio and AutosRUs' [suspension coil manufacturing dataset](https://github.com/npvandyke/MechaCar_Statistical_Analysis/blob/main/Deliverable_Three/Suspension_Coil.csv) and [MechaCar MPG dataset](https://github.com/npvandyke/MechaCar_Statistical_Analysis/blob/main/Deliverable_One/MechaCar_mpg.csv) to perform a retrospective analysis of historical data, analytical verification and validation of current automotive specifications and a study design of A/B product testing. 
+
+# Results: 
 
 ## Linear Regression to Predict MPG
 - Given a significance cutoff of 0.05, 'vehicle length', 'ground clearance' and the intercept were the only variables or coefficients to provide a non-random amount of variance to the mpg values in the dataset as indicated by their p-values. 
@@ -40,7 +42,7 @@ The results of the four one-sample, two-tailed t-tests can be viewed below:
 :-------------------------:|:-----------------:|:-------------------------:
 ![Lot 1](Deliverable_Three/Lot1_ttest.png) | ![Lot 2](Deliverable_Three/Lot2_ttest.png) | ![Lot 3](Deliverable_Three/Lot3_ttest.png)
 
-## Study Design: MechaCar vs Competition
+# Study Design: MechaCar vs Competition A/B Product Testing 
 
 In order to quantify how AutosRUs' MechaCar performs against competing car manufacturer models, I've designed a statistical study to compare multiple metrics that may be of interest to a consumer: including cost, city fuel efficiency, highway fuel efficiency, horse power and safety ratings. These metrics will be compared across vehicle class for the MechaCar and four other leading car manufacturers. 
 
